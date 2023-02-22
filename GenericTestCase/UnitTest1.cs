@@ -13,5 +13,12 @@ namespace GenericTestCase
             Assert.AreEqual(20, result);
             //Assert.Pass();
         }
+        [Test]
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnSecondMax_Int()
+        {
+            int result = genericMethodForInt.GenricValue(20, 10, 17);
+            Assert.AreEqual(10, result);
+            //Assert.Pass();
+        }
     }
 }
