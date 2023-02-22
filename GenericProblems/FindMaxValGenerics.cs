@@ -8,7 +8,7 @@ namespace GenericProblems
 {
         public class FindMaxGenric<T> where T : IComparable
         {
-            public T GenricValue(T FirstValue, T SecondValue, T ThirdValue)
+            public T GenricValues(T FirstValue, T SecondValue, T ThirdValue)
             {
                 if (FirstValue.CompareTo(SecondValue) > 0 && FirstValue.CompareTo(ThirdValue) > 0)
                     return FirstValue;
@@ -16,7 +16,7 @@ namespace GenericProblems
                     return SecondValue;
                 else
                     return ThirdValue;
-                Console.ReadLine();
+               
             }
 
 
