@@ -8,14 +8,14 @@ namespace GenericProblems
 {
         public class FindMaxGenric<T> where T : IComparable
         {
-            public T GenricValue(T firstNum, T secondNum, T thirdNum)
+            public T GenricValue(T FirstValue, T SecondValue, T ThirdValue)
             {
-                if (firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) > 0)
-                    return firstNum;
-                else if (secondNum.CompareTo(thirdNum) > 0 && secondNum.CompareTo(firstNum) > 0)
-                    return secondNum;
+                if (FirstValue.CompareTo(SecondValue) > 0 && FirstValue.CompareTo(ThirdValue) > 0)
+                    return FirstValue;
+                else if (SecondValue.CompareTo(ThirdValue) > 0 && SecondValue.CompareTo(FirstValue) > 0)
+                    return SecondValue;
                 else
-                    return thirdNum;
+                    return ThirdValue;
                 Console.ReadLine();
             }
 
