@@ -68,5 +68,13 @@ namespace GenericTestCase
             Assert.AreEqual("Ujjain", result);
             //Assert.Pass();
         }
+        [Test]
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnthridMax_string()
+        {
+            string result = genericMethodForString.GenricValue("Indore", "Bhopal", "Ujjain");
+            Assert.AreEqual("Bhopal", result);
+            //Assert.Pass();
+        }
+
     }
 }
