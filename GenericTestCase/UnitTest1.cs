@@ -6,6 +6,7 @@ namespace GenericTestCase
     {
         FindMaxGenric<int> genericMethodForInt = new FindMaxGenric<int>();
         FindMaxGenric<double> genericMethodForDouble = new FindMaxGenric<double>();
+        FindMaxGenric<string> genericMethodForString = new FindMaxGenric<string>();
 
         [Test]
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax_Int()
@@ -52,6 +53,13 @@ namespace GenericTestCase
             Assert.AreEqual(19.9, result);
             //Assert.Pass();
 
+        }
+        [Test]
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax_string()
+        {
+            string result = genericMethodForString.GenricValue("Indore", "Bhopal", "Ujjain");
+            Assert.AreEqual("Indore", result);
+            //Assert.Pass();
         }
     }
 }
