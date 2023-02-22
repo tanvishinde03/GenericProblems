@@ -45,5 +45,13 @@ namespace GenericTestCase
             //Assert.Pass();
 
         }
+        [Test]
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnthridMax_double()
+        {
+            double result = genericMethodForDouble.GenricValue(26.7, 34.8, 19.9);
+            Assert.AreEqual(19.9, result);
+            //Assert.Pass();
+
+        }
     }
 }
