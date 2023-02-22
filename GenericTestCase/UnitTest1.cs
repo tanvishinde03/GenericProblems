@@ -61,5 +61,12 @@ namespace GenericTestCase
             Assert.AreEqual("Indore", result);
             //Assert.Pass();
         }
+        [Test]
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnSecondMax_string()
+        {
+            string result = genericMethodForString.GenricValue("Indore", "Bhopal", "Ujjain");
+            Assert.AreEqual("Ujjain", result);
+            //Assert.Pass();
+        }
     }
 }
